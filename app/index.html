@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <link rel="stylesheet" href="styles/app.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container"><h1>freeCodeCamp: Intermediate Algorithm Scripting</h1></div>
+  <div id="exTab1" class="container">
+    <ul  class="nav nav-pills">
+      <li class="active">
+        <a  href="#1a" data-toggle="tab">Sum range</a>
+      </li>
+      <li><a href="#2a" data-toggle="tab">Diff Arrays</a>
+      </li>
+      <li><a href="#3a" data-toggle="tab">Applying clearfix</a>
+      </li>
+      <li><a href="#4a" data-toggle="tab">Background color</a>
+      </li>
+    </ul>
+
+    <div class="tab-content clearfix">
+      <!-- ###########################
+      Sum All Numbers in Range Section
+      ############################ -->
+      <div class="tab-pane active" id="1a">
+        <h3>Sum All Numbers in a Range</h3>
+        <div class="form-group row">
+          <label for="numberSumStart" class="col-2 col-form-label">Starting number</label>
+          <div class="col-10">
+            <input class="form-control" type="number" value="0" id="numberSumStart">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="numberSumEnd" class="col-2 col-form-label">Ending number</label>
+          <div class="col-10">
+            <input class="form-control" type="number" value="10" id="numberSumEnd">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="sumTotal" class="col-2 col-form-label" id='sumTotalLabel'>Sum of numbers from 0 to 10</label>
+          <div class="col-10">
+            <input class="form-control" readonly type="number" value="10" id="sumTotal">
+          </div>
+        </div>
+
+        <p>https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/sum-all-numbers-in-a-range</p>
+      </div>
+
+      <!-- ###########################
+      Diff Two Arrays Section
+      ############################ -->
+      <div class="tab-pane" id="2a">
+        <h3>Diff Two Arrays</h3>
+        <p>Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both.</p>
+        <div class="form-group row">
+          <label for="arrayDiff1" class="col-2 col-form-label">First Array</label>
+          <div class="col-10">
+            <input class="form-control" type="text" value="1, 2, 3, 'blue', 'green'" id="arrayDiff1">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="arrayDiff2" class="col-2 col-form-label">Second Array</label>
+          <div class="col-10">
+            <input class="form-control" type="text" value="3, 4, 5, 'green', 'red'" id="arrayDiff2">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-default" id='diffArrayBtn'>Submit</button>
+        <div class="form-group row">
+          <label for="sumTotal" class="col-2 col-form-label" id='sumTotalLabel'>New Array</label>
+          <div class="col-10">
+            <input class="form-control" readonly type="text" value="" id="sumTotal">
+          </div>
+        </div>
+
+        <p>https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/diff-two-arrays</p>
+      </div>
+
+      <div class="tab-pane" id="3a">
+        <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
+      </div>
+
+      <div class="tab-pane" id="4a">
+        <h3>We use css to change the background color of the content to be equal to the tab</h3>
+      </div>
+
+    </div>
+  </div>
+
+  <hr></hr>
+
+  <div class="container footer"><h3>by joeSzaf</h3></div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src='scripts/sumAllInRange.js'></script>
+  <script src='scripts/diffArrays.js'></script>
+  <script src='scripts/app.js'></script>
+</body>
+</html>
