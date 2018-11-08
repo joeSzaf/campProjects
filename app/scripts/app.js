@@ -42,9 +42,26 @@ window.onload = function () {
   const arrayDiffInput1 = $('#arrayDiff1');
   const arrayDiffInput2 = $('#arrayDiff2');
   const diffArrayBtn = $('#diffArrayBtn');
+  const diffArrayField = $('#diffArray');
 
-  let arr = arrayDiffInput1.val().split(",");
+  let arrayDiff1 = arrayDiffInput1.val().split(",").map(function(item) {
+      return item.trim();
+    });
+  let arrayDiff2 = arrayDiffInput2.val().split(",").map(function(item) {
+      return item.trim();
+    });
+  let newArrayFromDiff = [];
 
 
-  diffArrayBtn.click(function(){alert(arr);});
+  diffArrayBtn.click(function(){
+    arrayDiff1 = arrayDiffInput1.val().split(",").map(function(item) {
+        return item.trim();
+      });
+    arrayDiff2 = arrayDiffInput2.val().split(",").map(function(item) {
+        return item.trim();
+      });
+    newArrayFromDiff = diffArray(arrayDiff1, arrayDiff2)
+    console.log()
+    diffArrayField.val(newArrayFromDiff);
+  });
 }

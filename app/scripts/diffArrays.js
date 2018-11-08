@@ -1,7 +1,7 @@
 /*
 https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/diff-two-arrays
 */
-function diffArray(arr1, arr2) {
+const diffArray = function(arr1, arr2) {
   var newArr = [];
 
   // checks for duplicates in both arrays for values in arr1
